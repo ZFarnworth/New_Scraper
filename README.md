@@ -14,7 +14,11 @@ A scraper script finds overly positive endorsemesnt and ranks them to find the m
 
 ## Usage
 
-Using the terminal or commandline, Navigate to the directory and run 'Node Scraper.js'. 
+In the terminal or commandline, Navigate to the directory and run 'npm install' for all dependencies. 
+
+Then run 'Node Scraper.js' to run the script. 
+
+Run 'npm run test' in order to run tests using jest. 
 
 ## General-Info
 
