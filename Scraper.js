@@ -1,9 +1,9 @@
 const puppeteer = require("puppeteer");
-var Sentiment = require('sentiment');
-var sentiment = new Sentiment();
+const Sentiment = require('sentiment');
+const sentiment = new Sentiment();
 
 //adding extra points to words
-var options = {
+const options = {
   extras: {
     'best': 5,
     'incredible':5,
@@ -69,7 +69,7 @@ getReviewsAllPages().then(allReviewBodies => {
   allReviewBodies.forEach(review => {
 
     //determining the reviews score 
-    var result = sentiment.analyze(review, options);
+    const result = sentiment.analyze(review, options);
     reviewScoreObj = {reviewBody: review, Score: result.score};
 
     reviewsAndScores.push(reviewScoreObj)

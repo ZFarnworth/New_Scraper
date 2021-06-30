@@ -11,8 +11,6 @@ In the terminal or commandline, Navigate to the directory and run 'npm install' 
 
 Then run 'Node Scraper.js' to run the script. 
 
-Run 'npm run test' in order to run tests using jest. 
-
 ## General-Info
 
 The criteria used to determine which reviews are "overly-positive" is a score based on the number of positive and negative words used in the review. 
