@@ -1,25 +1,24 @@
 {
-    "name": "New Scraper",
-    "version": "1.0.0",
-    "description": "## Description",
-    "main": "Scraper.js",
-    "dependencies": {
-        "puppeteer": "^10.1.0",
-        "jest": "^27.0.6",
-        "sentiment": "^5.0.2",
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ZFarnworth/New_Scraper.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/ZFarnworth/New_Scraper/issues"
-    },
-    "homepage": "https://github.com/ZFarnworth/New_Scraper#readme"
+  "name": "new_scraper",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "Scraper.js",
+  "dependencies": {
+    "puppeteer": "^10.1.0",
+    "jest": "^27.0.6",
+    "sentiment": "^5.0.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZFarnworth/New_Scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZFarnworth/New_Scraper/issues"
+  },
+  "homepage": "https://github.com/ZFarnworth/New_Scraper#readme"
 }
