@@ -4,10 +4,6 @@
 
 A scraper script finds overly positive endorsemesnt and ranks them to find the most "over-the-top" reviews and uncover the top three worst offenders of overly positive endorsements.
 
-## Table of Contents:
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [General-Info] (#General-Info)
 
 ## Installation
 
