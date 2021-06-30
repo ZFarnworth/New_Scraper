@@ -8,7 +8,6 @@ var options = {
     'best': 5,
     'incredible':5,
     'love': 5,
-    'laugh': 5,
     'amazing': 5,
     '😁':5,
     '❤️':15,
@@ -88,6 +87,6 @@ for (let index = 0; index < 3; index++) {
 }
 })
 
-module.exports = sum;
+module.exports = getReviewsAllPages;
 
 
