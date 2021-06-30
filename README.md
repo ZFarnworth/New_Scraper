@@ -5,13 +5,6 @@
 A scraper script finds overly positive endorsemesnt and ranks them to find the most "over-the-top" reviews and uncover the top three worst offenders of overly positive endorsements.
 
 
-## Installation
-
-1. Node (https://nodejs.org/en/download/);
-2. npm Puppeteer (https://www.npmjs.com/package/puppeteer);
-3. npm Sentiment (https://www.npmjs.com/package/sentiment)
-4. npm Jest (https://www.npmjs.com/package/jest)
-
 ## Usage
 
 In the terminal or commandline, Navigate to the directory and run 'npm install' for all dependencies. 
@@ -40,6 +33,11 @@ Listed below are the items that have recieved extra points
     '👍':10,
   }
 
+## Packages 
 
+1. Node (https://nodejs.org/en/download/);
+2. npm Puppeteer (https://www.npmjs.com/package/puppeteer);
+3. npm Sentiment (https://www.npmjs.com/package/sentiment)
+4. npm Jest (https://www.npmjs.com/package/jest)
 
 
