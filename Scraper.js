@@ -2,6 +2,20 @@ const puppeteer = require("puppeteer");
 var Sentiment = require('sentiment');
 var sentiment = new Sentiment();
 
+//adding extra points to words
+var options = {
+  extras: {
+    'best': 5,
+    'incredible':5,
+    'love': 5,
+    'laugh': 5,
+    'amazing': 5,
+    '😁':5,
+    '❤️':15,
+    '😍':10,
+    '👍':10,
+  }
+};
 
 let URL = 'https://www.dealerrater.com/dealer/McKaig-Chevrolet-Buick-A-Dealer-For-The-People-dealer-reviews-23685/'
 const pages = ['page2', 'page3', 'page4','page5','page6'];
@@ -48,32 +62,32 @@ const getReviewsAllPages = async () => {
   return allReviewBodies;
 };
 
-// loop through the review bodys
-// for review in reviewBody 
-// determine the score
-// get the score, and then return a list of something like this {reviewBody: "this is a review body", score: 10}
-// a list of objects that look like this ^
-// sort on score
+
 
 getReviewsAllPages().then(allReviewBodies => {
-  // console.log(allReviewBodies, 'now????');
 
+  //looping throw reviews to assign each review a score
   allReviewBodies.forEach(review => {
-    var result = sentiment.analyze(review);
+
+    //determining the reviews score 
+    var result = sentiment.analyze(review, options);
     reviewScoreObj = {reviewBody: review, Score: result.score};
 
     reviewsAndScores.push(reviewScoreObj)
     
   });
-  // console.log(reviewsAndScores);
+  // sorting reviews based on their score top to bottom
   reviewsAndScores.sort(function(a, b) {
     return parseFloat(b.Score) - parseFloat(a.Score);  
 });
-for (let index = 0; index < 5; index++) {
+
+//grabbing the top 3 scores
+for (let index = 0; index < 3; index++) {
   const top5 = reviewsAndScores[index];
   console.log(top5)
 }
 })
 
+module.exports = sum;
 
 
